@@ -30,7 +30,7 @@
                 <a class="nav-link" href="https://docs.raspbian-addons.org/">Docs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://raspbian-addons.org/install/">Install</a>
+                <a class="nav-link" href="https://docs.raspbian-addons.org/install/">Install</a>
             </li>
             <li>
                 <a class="nav-link" href="https://docs.raspbian-addons.org/about/what-is-it/">About</a>
@@ -41,7 +41,7 @@
 <div class="heading">
     <h1 class="display-5 title">Raspbian Addons</h1>
     <p class="subtitle">Legendary extra APT repository for Raspberry Pies, containing open-source ARM software.<br />Supports both 32 and 64 bit Debian-based operating systems.</p>
-    <a class="btn btn-primary btn-lg" href="https://raspbian-addons.org/install/" target="_blank" role="button">Get started</a>
+    <a class="btn btn-primary btn-lg" href="https://docs.raspbian-addons.org/install/" target="_blank" role="button">Get started</a>
     <a class="btn btn-secondary btn-lg" href="https://docs.raspbian-addons.org/package-list/" target="_blank" role="button">View packages</a>
     <br /><br /><br /><br />
 </div>
@@ -67,81 +67,16 @@
         </div>
     </div>
 </div>
-<div class="is-center" style="text-align:center">
-    <h2 id="guide-to-installing">Installing:</h3>
-    <h3 id="installing">To install the repository, make sure you have an Internet connection and then run the following command in a terminal:
-    </h2>
-      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/repo.py)</span>
-    </code></pre></div></div>
-      <div class="tooltip">
-      <button class="clipboard_btn" onclick="copyToClipboard('#p1')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip1">Copy to clipboard</span></>
-    </div>
-    <h2 id="uninstalling">Uninstalling:</h2>
-    <h3 id="guide-to-uninstalling">To uninstall the repository, execute this command. It will not uninstall any programs installed through the repository.</h3>
-      <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">bash <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/uninstall.sh)</span>
-    </code></pre></div></div>
-      <div class="tooltip">
-      <button class="clipboard_btn" onclick="copyToClipboard('#p2')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip2">Copy to clipboard</span></button>
-    </div>
-    
-    <p style="display: none;" id="p1">python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/repo.py)
-    </p>
-    <p style="display: none;" id="p2">bash <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/uninstall.sh)
-    </p>
-    <!-- Script for copy button -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>
-    function copyToClipboard(element) {
-      var $temp = $("<input>");
-      $("body").append($temp);
-      $temp.val($(element).text()).select();
-      document.execCommand("copy");
-      $temp.remove();
-      var tooltip1 = document.getElementById("CopyTooltip1");
-      var tooltip2 = document.getElementById("CopyTooltip2");
-      var tooltip3 = document.getElementById("CopyTooltip3");
-      tooltip1.innerHTML = "Copied!";
-      tooltip2.innerHTML = "Copied!";
-      tooltip3.innerHTML = "Copied!";
-    }
-    
-    function Copy(id) {
-      if ( id == "1" ) {
-        var copyText1 = document.getElementById("CopyText1");
-        copyText1.select();
-        copyText1.setSelectionRange(0, 99999);
-        document.execCommand("copy");
-        var tooltip = document.getElementById("CopyTooltip1");
-        tooltip.innerHTML = "Copied!";
-        alert("Copied the text: " + copyText.value);
-      } else if (id == "2") {
-        var copyText2 = document.getElementById("CopyText2");
-        copyText2.select();
-        copyText2.setSelectionRange(0, 99999);
-        document.execCommand("copy");
-        var tooltip = document.getElementById("CopyTooltip2");
-        tooltip.innerHTML = "Copied!";
-      } else if (id == "2") {
-        var copyText3 = document.getElementById("CopyText3");
-        copyText3.select();
-        copyText3.setSelectionRange(0, 99999);
-        document.execCommand("copy");
-        var tooltip = document.getElementById("CopyTooltip3");
-        tooltip.innerHTML = "Copied!";
-      }
-    }
-    
-    function outFunc() {
-      var tooltip1 = document.getElementById("CopyTooltip1");
-      var tooltip2 = document.getElementById("CopyTooltip2");
-      var tooltip3 = document.getElementById("CopyTooltip3");
-      tooltip1.innerHTML = "Copy to clipboard";
-      tooltip2.innerHTML = "Copy to clipboard";
-      tooltip3.innerHTML = "Copy to clipboard";
-    }
-    </script>
-</div>
 <div class="page_end">
+    <div class="start">
+        <div class="card">
+            <div class="card-body gs-card">
+                <div class="title">Ready to install Raspbian Addons?</div>
+                <br />
+                <a class="btn btn-primary btn-lg" href="https://docs.raspbian-addons.org/install/" role="button">Get started</a>
+            </div><br />
+        </div>
+    </div>
     <div class="footer">
         <div class="bot-footer">
             Copyright © Raspbian Addons - 2021
